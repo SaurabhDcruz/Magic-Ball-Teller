@@ -229,16 +229,25 @@ option[type="text"] {
 }
 
 body {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0)),
+    /* Background setup */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(https://media0.giphy.com/media/jtVxhUfZvQ6KflynP0/giphy.gif?cid=790b761191ad666354b152a86634785afac4a7579f4f071d&rid=giphy.gif&ct=g);
-    width: 100%;
+
     background-repeat: no-repeat;
-    background-position-y: -19em;
     background-size: cover;
-    height: auto;
-    background-blend-mode: multiply;
+    background-position: center;
+    /* Image ko center mein rakhega */
+    background-attachment: fixed;
+    /* Scroll karne par background wahi rahega */
+
+    /* Height Fix */
+    min-height: 100vh;
+    /* Screen ki puri height lega */
+    margin: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 footer.row.footer {
